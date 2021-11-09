@@ -9,38 +9,17 @@
             Dado que eu acesse a página de cadastro no checkout do site EBAC-SHOP
 
             Cenário: Cadastro com dados válidos
-            Quando eu digitar o nome "Simone"
-            E eu digitar o sobrenome "Kovalenkinas"
-            E eu selecionar o país "Brasil"
-            E eu digitar o endereço: "Rua Marte, 429"
-            E eu digitar a cidade "Barueri"
-            E eu digitar o CEP "06414000"
-            E eu digitar o telefone "11986985813"
-            E eu digitar o e-mail "simone@teste.com.br"
+            Quando eu preencher todos os campos com dados válidos
             E eu clicar em FINALIZAR compra
             Então deve exibir a mensagem de sucesso "Compra finalizada com sucesso!"
 
             Cenário: Cadastro com dados e-mail inválido
-            Quando eu digitar o nome "Simone"
-            E eu digitar o sobrenome "Kovalenkinas"
-            E eu selecionar o país "Brasil"
-            E eu digitar o endereço: "Rua Marte, 429"
-            E eu digitar a cidade "Barueri"
-            E eu digitar o CEP "06414000"
-            E eu digitar o telefone "11986985813"
-            E eu digitar o e-mail "simone.teste.com.br"
+            Quando eu informar os dados com o e-mail inválido "simone.teste.com.br"
             E eu clicar em FINALIZAR compra
             Então deve exibir a mensagem de alerta "E-mail no formato inválido"
 
             Cenário: Cadastro com campo CEP vazio
-            Quando eu digitar o nome "Simone"
-            E eu digitar o sobrenome "Kovalenkinas"
-            E eu selecionar o país "Brasil"
-            E eu digitar o endereço: "Rua Marte, 429"
-            E eu digitar a cidade ""
-            E eu digitar o CEP "06414000"
-            E eu digitar o telefone "11986985813"
-            E eu digitar o e-mail "simone.teste.com.br"
+            Quando eu digitar os dados com o CEP vazio
             E eu clicar em FINALIZAR compra
             Então deve exibir a mensagem de alerta "Campo cidade não informado"
 
